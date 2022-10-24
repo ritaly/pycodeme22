@@ -33,6 +33,9 @@ data = [
     ('December', range(31)),
       ]
 
+# for element in data:
+#     show_month(element[0], element[1])
+
 data = dict(data)
 
 for name, days_range in data.items():
