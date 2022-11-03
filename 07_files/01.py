@@ -13,9 +13,11 @@ def get_random_quote(list_of_quotes):
 
 def show(quote):
     print("Quote of the day is:\n")
+    txt, author = quote.split(' -')
 
     print('*' * 100)
-    print(quote.center(100))
+    print(txt.center(100))
+    print(author.center(100))
     print('*' * 100)
 
 
