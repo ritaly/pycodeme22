@@ -11,15 +11,15 @@ lub
 output: https://helion.pl/view/90412/algorytmy-ilustrowany-przewodnik-aditya-bhargava,algoip.htm#format/d
 
 - Strona promocji
+  - input https://helion.pl/sympatycznacena.phtml
+  - output https://helion.pl/page/90412/sympatycznacena.phtml
 
-input: https://helion.pl/kategorie/promocja-2za1
-output: https://helion.pl/page/90412/promocja/promocja-2za1
 
 
 - Link do kategorii
 
-wzór: https://helion.pl/page/id/kategorie/link_do_kategorii
+    wzór: https://helion.pl/page/id/kategorie/link_do_kategorii
 
-input: https://helion.pl/kategorie/programowanie
-output: https://helion.pl/page/90412/kategorie/programowanie
+  - input: https://helion.pl/kategorie/programowanie
+  - output: https://helion.pl/page/90412/kategorie/programowanie
 

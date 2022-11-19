@@ -1,6 +1,9 @@
 import json
 
-wpis = {'imie': 'Jimi', 'numer': 1234}
+wpis = {
+    'imie': 'Jimi',
+    'numer': 1234
+}
 
 lista_numerow = []
 
