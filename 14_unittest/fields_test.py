@@ -12,19 +12,33 @@ class FieldsTestCase(unittest.TestCase):
         self.assertEqual(square_area(self.a), 2500)
 
     def test_square_area_with_incorrect_values(self):
-        self.assertEqual(square_area('$'), 25)
+        # self.assertRaises(ValueError, square_area, "$")
+        with self.assertRaises(ValueError):
+            square_area("A")
 
     def test_rectangle_area_with_correct_values(self):
         result = rectangle_area(self.a, self.b)
         self.assertEqual(result, 3000)
 
+    def test_rectangle_area_with_incorrect_value(self):
+        with self.assertRaises(ValueError):
+            rectangle_area(self.a, "B")
+
     def test_triangle_area_with_correct_values(self):
         result = triangle_area(self.a, self.b)
         self.assertEqual(result, 1500)
 
+    def test_triangle_area_with_incorrect_value(self):
+        with self.assertRaises(ValueError):
+            triangle_area(self.a, "B")
+
     def test_trapezoid_area_with_correct_value(self):
         result = trapezoid_area(self.a, self.b, self.h)
         self.assertEqual(result, 550)
+
+    def test_trapezoid_with_incorrect_value(self):
+        with self.assertRaises(ValueError):
+            trapezoid_area(self.a, self.b, "H")
 
     def tearDown(self):
         del self.a
